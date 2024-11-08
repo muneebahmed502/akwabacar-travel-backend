@@ -2,9 +2,9 @@
   "name": "travel_backend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "main": "index.mjs",
   "scripts": {
-    "type": "module",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.mjs",
     "dev": "nodemon index.mjs"
@@ -26,6 +26,7 @@
     "passport": "^0.7.0",
     "passport-google-oauth2": "^0.2.0",
     "passport-google-oauth20": "^2.0.0",
+    "railway": "^2.0.17",
     "socket.io": "^4.8.0",
     "stripe": "^16.12.0"
   }
