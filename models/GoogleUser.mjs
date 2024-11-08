@@ -16,5 +16,5 @@ const googleSchema = new Schema({
     },
     role: { type: String, default: 'passenger' } 
 })
-const GoogleUser = mongoose.model('users',googleSchema);
-export default GoogleUser
+const googleUser = mongoose.model('users',googleSchema);
+export default googleUser

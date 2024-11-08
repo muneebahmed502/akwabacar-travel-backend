@@ -1,5 +1,5 @@
 import { oauth2client } from "../utils/googleConfig.mjs"
-import GoogleUser from "../models/googleUser.mjs"
+import googleUser from "../models/googleUser.mjs"
 import axios from "axios"
 import jwt  from "jsonwebtoken"
 
@@ -13,9 +13,9 @@ try{
     )
     console.log('userRes ==>',userRes)
     const {email,name,picture} = userRes.data
-    let user = await GoogleUser.findOne({email})
+    let user = await googleUser.findOne({email})
     if (!user){
-        user = await GoogleUser.create({email,name,image:picture})
+        user = await googleUser.create({email,name,image:picture})
     }
     const { _id} = user
     const token = jwt.sign({
