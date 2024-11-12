@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*", // Allow all origins for testing purposes
+    origin: "https://akwabacar.netlify.app", // Allow all origins for testing purposes
     methods: ["GET", "POST"],
     allowedHeaders: ["my-custom-header"],
     credentials: true // Allow credentials if necessary
