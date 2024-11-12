@@ -25,7 +25,7 @@ export let connectedDrivers = {};
 const users = {}; // Change this to an object instead of an array
 app.use(express.json())
 app.use(cors({
-  origin: 'http://localhost:3000', // Your frontend URL
+  origin: 'https://akwabacar.netlify.app', // Your frontend URL
   credentials: true
 }));
 app.use("/", setupRoutes(io)); // Pass io to setupRoutes
